@@ -1,0 +1,5 @@
+-e git://github.com/clips/MBSP.git#egg=MBSP
+Pattern==2.5
+argparse==1.2.1
+wsgiref==0.1.2
+beautifulsoup4==4.1.3
