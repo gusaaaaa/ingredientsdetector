@@ -33,7 +33,7 @@ class IngredientsDetector(object):
                  "centimeter", "centimetre", "cm",
                  "meter", "metre", "m",
                  "inch", "in", "\""] # source: http://en.wikibooks.org/wiki/Cookbook:
-        pattern = r"^(?:%s)\s*(?:%s)(?:s|es)?\s+.+$" % ("|".join(quantity), "|".join(units))
+        pattern = r"^(?:%s)\.?\s*(?:%s)(?:s|es)?\s+.+$" % ("|".join(quantity), "|".join(units))
         self.__instruction_pattern = re.compile(pattern, re.IGNORECASE)
 
     def extract(self, html):
